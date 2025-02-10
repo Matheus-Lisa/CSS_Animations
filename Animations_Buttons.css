@@ -1,8 +1,10 @@
+/* Dark Theme */ 
 html {
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Button 1 Style */
 .button_1 {
     padding: 10px 20px;
     font-size: 16px;
@@ -17,6 +19,7 @@ html {
     transform: scale(1.5);
 }
 
+/* Button 2 Style */
 .button_2 {
     padding: 10px 20px;
     font-size: 16px;
@@ -26,11 +29,11 @@ html {
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
-  .button_2:hover {
+.button_2:hover {
     background-color: #2ecc71;
   }
 
- 
+/* Button 3 Style */
 .button_3 {
     padding: 10px 20px;
     font-size: 16px;
@@ -39,16 +42,17 @@ html {
     border: none;
     border-radius: 5px;
     }
+
 .button_3:active {
     animation: bounce 0.4s ease;
     }
-
     @keyframes bounce {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
     }
 
+/* Button 4 Style */
 .button_4 {
     padding: 10px 20px;
     font-size: 16px;
@@ -58,13 +62,12 @@ html {
     border-radius: 5px;
     transition: box-shadow 0.3s ease;
   }
+
 .button_4:hover {
     box-shadow: 0 0 20px 5px rgba(243, 156, 18, 0.7);
   }
 
-
-
-
+/* Button 5 Style */
 .button_5 {
     padding: 10px 20px;
     font-size: 16px;
@@ -73,6 +76,7 @@ html {
     border: none;
     position: relative;
     }
+
 .button_5::after {
     content: '';
     position: absolute;
@@ -83,9 +87,43 @@ html {
     background: #e74c3c;
     transition: width 0.3s ease;
     }
+
 .button_5:hover::after {
     width: 100%;
     }
+
+/* Form 1 Style */   
+.input-name {
+  position: relative;
+  margin: 20px 0;
+  padding: auto;
+}
+input {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+input:focus {
+  border-color: #3498db;
+}
+label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #aaa;
+  transition: 0.3s ease;
+}
+input:focus + label, input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #3498db;
+}
 
   
 
